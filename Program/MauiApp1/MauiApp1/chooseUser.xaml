@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.chooseUser">
+    <VerticalStackLayout>
+        <Button Text="Back" Margin="100,0,100,0" Clicked="Button_Clicked" IsEnabled="True"/>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <ImageButton Source="greenbook" Grid.Column="0" Grid.Row="0"/>
+            <ImageButton Source="redbook" Grid.Column="0" Grid.Row="1"/>
+            <ImageButton Source="purplebook" Grid.Column="1" Grid.Row="0"/>
+            <ImageButton Source="cyanbook" Grid.Column="1" Grid.Row="1"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
