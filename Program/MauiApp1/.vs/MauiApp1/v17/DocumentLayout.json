@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\px59nyu\\Documents\\GitHub\\readingPassion\\Program\\MauiApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BC39076-EF6D-4E11-8C8F-3DBC9F90E747}|MauiApp1\\MauiApp1.csproj|c:\\users\\px59nyu\\documents\\github\\readingpassion\\program\\mauiapp1\\mauiapp1\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BC39076-EF6D-4E11-8C8F-3DBC9F90E747}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9BC39076-EF6D-4E11-8C8F-3DBC9F90E747}|MauiApp1\\MauiApp1.csproj|c:\\users\\px59nyu\\documents\\github\\readingpassion\\program\\mauiapp1\\mauiapp1\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9BC39076-EF6D-4E11-8C8F-3DBC9F90E747}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC39076-EF6D-4E11-8C8F-3DBC9F90E747}|MauiApp1\\MauiApp1.csproj|c:\\users\\px59nyu\\documents\\github\\readingpassion\\program\\mauiapp1\\mauiapp1\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC39076-EF6D-4E11-8C8F-3DBC9F90E747}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BC39076-EF6D-4E11-8C8F-3DBC9F90E747}|MauiApp1\\MauiApp1.csproj|c:\\users\\px59nyu\\documents\\github\\readingpassion\\program\\mauiapp1\\mauiapp1\\chooseuser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -60,7 +60,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -116,12 +116,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "homePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\px59nyu\\Documents\\GitHub\\readingPassion\\Program\\MauiApp1\\MauiApp1\\homePage.xaml.cs",
               "RelativeDocumentMoniker": "MauiApp1\\homePage.xaml.cs",
-              "ToolTip": "C:\\Users\\px59nyu\\Documents\\GitHub\\readingPassion\\Program\\MauiApp1\\MauiApp1\\homePage.xaml.cs*",
-              "RelativeToolTip": "MauiApp1\\homePage.xaml.cs*",
+              "ToolTip": "C:\\Users\\px59nyu\\Documents\\GitHub\\readingPassion\\Program\\MauiApp1\\MauiApp1\\homePage.xaml.cs",
+              "RelativeToolTip": "MauiApp1\\homePage.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T11:35:40.701Z",
@@ -155,13 +155,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "homePage.xaml",
               "DocumentMoniker": "C:\\Users\\px59nyu\\Documents\\GitHub\\readingPassion\\Program\\MauiApp1\\MauiApp1\\homePage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\homePage.xaml",
-              "ToolTip": "C:\\Users\\px59nyu\\Documents\\GitHub\\readingPassion\\Program\\MauiApp1\\MauiApp1\\homePage.xaml*",
-              "RelativeToolTip": "MauiApp1\\homePage.xaml*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "ToolTip": "C:\\Users\\px59nyu\\Documents\\GitHub\\readingPassion\\Program\\MauiApp1\\MauiApp1\\homePage.xaml",
+              "RelativeToolTip": "MauiApp1\\homePage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-15T11:35:30.718Z",
               "EditorCaption": ""

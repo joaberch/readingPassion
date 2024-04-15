@@ -8,6 +8,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" FontFamily="Imperial Script"/> <!--TODO font-->
         <Image Source="piledelivres"></Image> <!--TODO same line as BookPassion label-->
-        
+
+        <ProgressBar></ProgressBar>
     </VerticalStackLayout>
 </ContentPage>
