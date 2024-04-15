@@ -7,13 +7,14 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-
-            <ImageButton
+            <Grid>
+                <ImageButton
                 Source="zarathoustra"
                 WidthRequest="600"
                 HeightRequest="875"
                 IsEnabled="True"
                 Clicked="ImageButton_Clicked"/>
+            </Grid>
         </VerticalStackLayout>
     </ScrollView>
 

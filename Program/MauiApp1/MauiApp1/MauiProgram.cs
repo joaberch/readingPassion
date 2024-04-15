@@ -6,6 +6,9 @@ namespace MauiApp1
     {
         public static MauiApp CreateMauiApp()
         {
+            string[] listBooks = ["a1984a.png", "fondation.png", "fondationfoudroyee.png", "maitrehautchateau.png", "origineespece.png", "prince.png", "romanrenart.png", "toursombre.png", "zarathoustra.png"];
+            string randomBook = listBooks[0];
+
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()

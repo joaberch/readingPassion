@@ -10,6 +10,12 @@
     <MauiXaml Update="chooseUser.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="connection.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="homePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
   </ItemGroup>
   <ItemGroup>
     <None Update="App.xaml">

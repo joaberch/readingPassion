@@ -2,10 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.chooseUser">
-    <VerticalStackLayout>
-        <Button Text="Back" Margin="100,0,100,0" Clicked="Button_Clicked" IsEnabled="True"/>
+    <VerticalStackLayout Padding="30,0" Spacing="25">
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Choisissez votre profil"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Grid>
@@ -17,10 +16,14 @@
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <ImageButton Source="greenbook" Grid.Column="0" Grid.Row="0"/>
-            <ImageButton Source="redbook" Grid.Column="0" Grid.Row="1"/>
-            <ImageButton Source="purplebook" Grid.Column="1" Grid.Row="0"/>
-            <ImageButton Source="cyanbook" Grid.Column="1" Grid.Row="1"/>
+            <ImageButton Source="greenbook" Grid.Column="0" Grid.Row="0" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="ImageButton_Clicked"/>
+            <Label Text="User 1" Grid.Column="0" Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
+            <ImageButton Source="redbook" Grid.Column="1" Grid.Row="0" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="ImageButton_Clicked"/>
+            <Label Text="User 2" Grid.Column="1" Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
+            <ImageButton Source="purplebook" Grid.Column="0" Grid.Row="1" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="ImageButton_Clicked"/>
+            <Label Text="User 3" Grid.Column="0" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
+            <ImageButton Source="cyanbook" Grid.Column="1" Grid.Row="1" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="ImageButton_Clicked"/>
+            <Label Text="User 4" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
