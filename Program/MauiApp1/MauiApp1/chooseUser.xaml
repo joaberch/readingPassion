@@ -16,13 +16,13 @@
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <ImageButton Source="greenbook" Grid.Column="0" Grid.Row="0" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="ImageButton_Clicked"/>
+            <ImageButton Source="greenbook" Grid.Column="0" Grid.Row="0" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="firstUser"/>
             <Label Text="User 1" Grid.Column="0" Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
-            <ImageButton Source="redbook" Grid.Column="1" Grid.Row="0" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="ImageButton_Clicked"/>
+            <ImageButton Source="redbook" Grid.Column="1" Grid.Row="0" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="secondUser"/>
             <Label Text="User 2" Grid.Column="1" Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
-            <ImageButton Source="purplebook" Grid.Column="0" Grid.Row="1" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="ImageButton_Clicked"/>
+            <ImageButton Source="purplebook" Grid.Column="0" Grid.Row="1" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="thirdUser"/>
             <Label Text="User 3" Grid.Column="0" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
-            <ImageButton Source="cyanbook" Grid.Column="1" Grid.Row="1" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="ImageButton_Clicked"/>
+            <ImageButton Source="cyanbook" Grid.Column="1" Grid.Row="1" BackgroundColor="#D9D9D9" Margin="10" CornerRadius="25" Clicked="fourthUser"/>
             <Label Text="User 4" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
         </Grid>
     </VerticalStackLayout>

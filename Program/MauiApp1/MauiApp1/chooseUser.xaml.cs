@@ -11,7 +11,23 @@ public partial class chooseUser : ContentPage
         BackgroundColor = Microsoft.Maui.Graphics.Color.FromArgb("ABABAB");
     }
 
-    private async void ImageButton_Clicked(object sender, EventArgs e)
+    private async void firstUser(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Connection());
+        
+    }
+
+    private async void secondUser(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Connection());
+    }
+
+    private async void thirdUser(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Connection());
+    }
+
+    private async void fourthUser(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new Connection());
     }

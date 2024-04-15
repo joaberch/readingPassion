@@ -11597,16 +11597,17 @@ public final class R {
     public static final int notification_tile_bg=0x7f0700e6;
     public static final int notify_panel_notification_icon_bg=0x7f0700e7;
     public static final int origineespece=0x7f0700e8;
-    public static final int prince=0x7f0700e9;
-    public static final int purplebook=0x7f0700ea;
-    public static final int redbook=0x7f0700eb;
-    public static final int romanrenart=0x7f0700ec;
-    public static final int splash=0x7f0700ed;
-    public static final int test_level_drawable=0x7f0700ee;
-    public static final int tooltip_frame_dark=0x7f0700ef;
-    public static final int tooltip_frame_light=0x7f0700f0;
-    public static final int toursombre=0x7f0700f1;
-    public static final int zarathoustra=0x7f0700f2;
+    public static final int piledelivres=0x7f0700e9;
+    public static final int prince=0x7f0700ea;
+    public static final int purplebook=0x7f0700eb;
+    public static final int redbook=0x7f0700ec;
+    public static final int romanrenart=0x7f0700ed;
+    public static final int splash=0x7f0700ee;
+    public static final int test_level_drawable=0x7f0700ef;
+    public static final int tooltip_frame_dark=0x7f0700f0;
+    public static final int tooltip_frame_light=0x7f0700f1;
+    public static final int toursombre=0x7f0700f2;
+    public static final int zarathoustra=0x7f0700f3;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
