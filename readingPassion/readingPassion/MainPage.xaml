@@ -5,19 +5,85 @@
 
     <ScrollView>
         <VerticalStackLayout BackgroundColor="#ABABAB">
+            <!--Header-->
             <FlexLayout JustifyContent="Center" AlignItems="Start" Margin="0, 10, 0, 0">
                 <ImageButton Source="logo" Margin="0, 0, 5, 0"/>
                 <Label Text="BookPassion" FontFamily="ImperialScript" FontSize="30" Margin="5, 0, 0, 0"/>
             </FlexLayout>
 
-            <Border Stroke="Black" StrokeThickness="0.9" StrokeShape="RoundRectangle 10, 10, 10, 10" WidthRequest="350" Padding="1.5" Margin="0, 10, 0, 0">
+            <!--Search Bar-->
+            <Border Stroke="Black" StrokeThickness="1.6" StrokeShape="RoundRectangle 30, 30, 30, 30" WidthRequest="350" Padding="1.5" Margin="0, 10, 0, 0">
                 <SearchBar Placeholder="Search Books..."/>
             </Border>
 
-            <FlexLayout JustifyContent="SpaceAround" Margin="0, 25, 0, 0">
+            <!--Reprendre lecture-->
+            <FlexLayout JustifyContent="SpaceAround" Margin="-35, 25, -35, -5">
                 <Label Text="Reprendre lecture" FontFamily="ImperialScript" FontSize="20"/>
-                <Label Text="Voir plus" TextColor="Blue" FontFamily="ImperialScript" FontSize="20"/><!--TODO clickable-->
+                <Label Text="Voir plus" TextColor="Blue" FontFamily="ImperialScript" FontSize="20"/> <!--TODO Clickable-->
             </FlexLayout>
+            <!--Line-->
+            <Line Stroke="Black" X1="37" X2="370" StrokeThickness="2"/>
+            <!--Image-->
+            <Grid Margin="25, 10, 25, 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="0"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="1"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="2"/>
+            </Grid>
+
+            <!--À lire-->
+            <FlexLayout JustifyContent="SpaceAround" Margin="-35, 25, -35, -5">
+                <Label Text="Liste de lecture" FontFamily="ImperialScript" FontSize="20"/>
+                <Label Text="Voir plus" TextColor="Blue" FontFamily="ImperialScript" FontSize="20"/> <!--TODO clickable-->
+            </FlexLayout>
+            <!--Line-->
+            <Line Stroke="Black" X1="37" X2="370" StrokeThickness="2"/>
+            <!--Image-->
+            <Grid Margin="25, 10, 25, 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="0"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="1"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="2"/>
+            </Grid>
+
+            <!--Lu récemment-->
+            <FlexLayout JustifyContent="SpaceAround" Margin="-35, 25, -35, -5">
+                <Label Text="Lu récemment" FontFamily="ImperialScript" FontSize="20"/>
+                <Label Text="Voir plus" TextColor="Blue" FontFamily="ImperialScript" FontSize="20"/><!--¨TODO clickable-->
+            </FlexLayout>
+            <!--Line-->
+            <Line Stroke="Black" X1="37" X2="370" StrokeThickness="2"/>
+            <!--Image-->
+            <Grid Margin="25, 10, 25, 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="0"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="1"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="2"/>
+            </Grid>
 
         </VerticalStackLayout>
     </ScrollView>
