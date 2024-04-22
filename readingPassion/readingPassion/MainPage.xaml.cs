@@ -2,24 +2,29 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
-        }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            List<Book> books = new List<Book> ();
         }
     }
 
+    internal class Book
+    {
+        public string title;
+        public string category;
+        public int nbrPage;
+        public string author;
+        public string[] tags;
+
+        public Book(string title, string category, int nbrPage, string author, string[] tags)
+        {
+            this.title = title;
+            this.category = category;
+            this.nbrPage = nbrPage;
+            this.author = author;
+            this.tags = tags;
+        }
+    }
 }

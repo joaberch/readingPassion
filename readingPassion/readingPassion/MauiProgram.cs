@@ -13,6 +13,7 @@ namespace readingPassion
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("ImperialScript-Regular.ttf", "ImperialScript");
                 });
 
 #if DEBUG
