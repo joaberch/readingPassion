@@ -1,14 +1,24 @@
-﻿using CommunityToolkit.Mvvm.Input;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore.Storage;
 using readingPassion.Models;
 using readingPassion.Services;
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using VersOne.Epub;
 
-namespace readingPassion
+namespace readingPassion.ViewModel
 {
-    public partial class MainPage : ContentPage
+    public partial class Mvvm1ViewModel : ObservableObject
     {
-        
+        //La liste récupérant les livres
+        [ObservableProperty]
+        private ObservableCollection<string> books = new() {"test" };
+
         public List<Book> bookss =
             [
                 new Book(title: "1984", category: "novel", nbrPage: 438, author: "George Orwell", tags: ["politique", "dystopique", "économique", "fiction"], coverImage: "a1984a", state: "Current"),
@@ -19,43 +29,36 @@ namespace readingPassion
                 new Book(title: "Le roman de renart", category: "recueil", nbrPage: 96, author: "unknown", tags: ["animaux"], coverImage: "romanrenart", state: "Current"),
                 new Book(title: "La tour sombre", category: "série", nbrPage: 376, author: "Stephen King", tags: ["fantastique", "western"], coverImage: "toursombre", state: "Done")
         ];
-        
-        public MainPage()
-        {
-            InitializeComponent();
-            testc();
-        }
-        private async void testc()
-        {
-            await FileSystem.Current.OpenAppPackageFileAsync("La_Fontaine_Jean_de-Fables.epub");
-        }
-        private void ImageButton_Loaded(object sender, EventArgs e)
-        {
-            var image = (ImageButton)sender;
-            int rand = new Random().Next(0, bookss.Count);
-            image.Source = bookss[rand].coverImage;
-        }
-    }
 
-    public class Book
-    {
-        public string title;
-        public string category;
-        public int nbrPage;
-        public string author;
-        public string[] tags;
-        public string coverImage;
-        public string state;
-
-        public Book(string title, string category, int nbrPage, string author, string[] tags, string coverImage, string state)
+        //La méthode qui rajoute des livres
+        [RelayCommand]
+        private void AddWish(string title)
         {
-            this.title = title;
-            this.category = category;
-            this.nbrPage = nbrPage;
-            this.author = author;
-            this.tags = tags;
-            this.coverImage = coverImage;
-            this.state = state;
+            books.Add("test");
+        }
+
+        public Mvvm1ViewModel()
+        {
+            RefreshBooksFromDB();
+            readEpub();
+        }
+
+        private void RefreshBooksFromDB(ReaderContext? context = null)
+        {
+            books.Clear();
+            using (var dbContext = context ?? new ReaderContext())
+            {
+                foreach (var dbBook in dbContext.books)
+                {
+                    bookss.Add(dbBook);
+                }
+            }
+        }
+
+        private async void readEpub()
+        {
+            await FileSystem.Current.OpenAppPackageFileAsync("");
+
         }
     }
 }

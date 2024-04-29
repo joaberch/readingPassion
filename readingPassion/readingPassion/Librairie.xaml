@@ -2,44 +2,117 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="readingPassion.Librairie">
-    <VerticalStackLayout BackgroundColor="#ABABAB">
-        <!--Header-->
-        <FlexLayout JustifyContent="Center" AlignItems="Start" Margin="0, 10, 0, 0">
-            <ImageButton Source="logo" Margin="0, 0, 5, 0"/>
-            <Label Text="BookPassion" FontFamily="ImperialScript" FontSize="30" Margin="5, 0, 0, 0"/>
-        </FlexLayout>
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#ABABAB">
+            <!--Header-->
+            <FlexLayout JustifyContent="Center" AlignItems="Start" Margin="0, 10, 0, 0">
+                <ImageButton Source="logo" Margin="0, 0, 5, 0"/>
+                <Label Text="BookPassion" FontFamily="ImperialScript" FontSize="30" Margin="5, 0, 0, 0"/>
+            </FlexLayout>
 
-        <!--Search Bar-->
-        <Border Stroke="Black" StrokeThickness="1.6" StrokeShape="RoundRectangle 30, 30, 30, 30" WidthRequest="350" Padding="1.5" Margin="0, 10, 0, 0">
-            <SearchBar Placeholder="Search Books..."/>
-        </Border>
+            <!--Search Bar-->
+            <Border Stroke="Black" StrokeThickness="1.6" StrokeShape="RoundRectangle 30, 30, 30, 30" WidthRequest="350" Padding="1.5" Margin="0, 10, 0, 0">
+                <SearchBar Placeholder="Search Books..."/>
+            </Border>
 
-        <!--Menu tri-->
-        <HorizontalStackLayout Margin="10, 10, 10, 0">
-            <!--TODO clickable-->
-            <Label Text="Livres" Margin="5" FontFamily="ImperialScript" FontSize="20"/>
-            <Label Text="Autheur" Margin="5" FontFamily="ImperialScript" FontSize="20"/>
-            <Label Text="Collection" Margin="5" FontFamily="ImperialScript" FontSize="20"/>
-            <Label Text="Tags" Margin="5" FontFamily="ImperialScript" FontSize="20"/>
-        </HorizontalStackLayout>
+            <!--Menu tri-->
+            <HorizontalStackLayout Margin="10, 10, 10, 0">
+                <!--TODO clickable-->
+                <Label Text="Livres" Margin="5" FontFamily="ImperialScript" FontSize="20"/>
+                <Label Text="Autheur" Margin="5" FontFamily="ImperialScript" FontSize="20"/>
+                <Label Text="Collection" Margin="5" FontFamily="ImperialScript" FontSize="20"/>
+                <Label Text="Tags" Margin="5" FontFamily="ImperialScript" FontSize="20"/>
+            </HorizontalStackLayout>
 
-        <!--Ligne-->
-        <Line Stroke="Black" X1="15" X2="375" StrokeThickness="0.5" Margin="0, -7, 0, 0"/>
-        <Line Stroke="Black" X1="15" X2="55" StrokeThickness="2" Margin="0, -9, 0, 0"/>
+            <!--Ligne-->
+            <Line Stroke="Black" X1="15" X2="375" StrokeThickness="0.5" Margin="0, -7, 0, 0"/>
+            <Line Stroke="Black" X1="15" X2="55" StrokeThickness="2" Margin="0, -9, 0, 0"/>
 
-        <!--Picker-->
-        <HorizontalStackLayout>
-            <Label Text="Filtre:" Margin="10, 10, 0, 0"/>
-            <Picker SelectedIndex="0">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Tout</x:String>
-                        <x:String>Non lu</x:String>
-                        <x:String>Lecture en cours</x:String>
-                        <x:String>Terminé</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
-        </HorizontalStackLayout>
-    </VerticalStackLayout>
+            <!--Picker-->
+            <HorizontalStackLayout>
+                <Label Text="Filtre:" Margin="10, 10, 0, 0"/>
+                <Picker SelectedIndex="0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Tout</x:String>
+                            <x:String>Non lu</x:String>
+                            <x:String>Lecture en cours</x:String>
+                            <x:String>Terminé</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </HorizontalStackLayout>
+
+            <!--oneBook-->
+            <Border Stroke="Black" Margin="25, 0, 25, 10">
+                <HorizontalStackLayout BackgroundColor="#D9D9D9" Padding="10">
+                    <Image Source="zarathoustra"/>
+                    <VerticalStackLayout>
+                        <!--book title-->
+                        <FlexLayout Wrap="Wrap" JustifyContent="SpaceBetween">
+                            <Label Text="Ainsi parlait Zarathoustra" Margin="5, 0, 0, 0"/>
+                            <Label Text="Friedrich Nietzche" Margin="5, 0, 0, 0"/>
+                        </FlexLayout>
+                        <FlexLayout Wrap="Wrap" AlignItems="Center">
+                            <!--tags-->
+                            <Label Text="Philosophie" Padding="5" BackgroundColor="Yellow" Margin="5, 0, 0, 0"/>
+                            <Label Text="Pour les cours" Padding="5" BackgroundColor="Orange" Margin="5, 0, 0, 0"/>
+                            <Label Text="Afin d'éclaircir un point je prolonge" Padding="5" BackgroundColor="Green" Margin="5, 0, 0, 0"/>
+                            <Label Text="Retour à la ligne" Padding="5" BackgroundColor="MediumAquamarine" Margin="5, 0, 0, 0"/>
+                        </FlexLayout>
+                        <!--Date-->
+                        <Label Text="Ajouté le 29.04.2024" Margin="15, 0, 0, 0"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!--oneBook-->
+            <Border Stroke="Black" Margin="25, 0, 25, 10">
+                <HorizontalStackLayout BackgroundColor="#D9D9D9" Padding="10">
+                    <Image Source="a1984a"/>
+                    <VerticalStackLayout>
+                        <!--book title-->
+                        <FlexLayout Wrap="Wrap" JustifyContent="SpaceBetween">
+                            <Label Text="1984" Margin="5, 0, 0, 0"/>
+                            <Label Text="George Orwell" Margin="5, 0, 0, 0"/>
+                        </FlexLayout>
+                        <FlexLayout Wrap="Wrap" AlignItems="Center">
+                            <!--tags-->
+                            <Label Text="Philosophie" Padding="5" BackgroundColor="Yellow" Margin="5, 0, 0, 0"/>
+                            <Label Text="Pour les cours" Padding="5" BackgroundColor="Orange" Margin="5, 0, 0, 0"/>
+                            <Label Text="Politique" Padding="5" BackgroundColor="Green" Margin="5, 0, 0, 0"/>
+                            <Label Text="Philosophie politique" Padding="5" BackgroundColor="Coral" Margin="5, 0, 0, 0"/>
+                            <Label Text="Avant l'an 2000" Padding="5" BackgroundColor="Firebrick" Margin="5, 0, 0, 0"/>
+                        </FlexLayout>
+                        <!--Date-->
+                        <Label Text="Ajouté le 29.04.2024" Margin="15, 0, 0, 0"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!--oneBook-->
+            <Border Stroke="Black" Margin="25, 0, 25, 10">
+                <HorizontalStackLayout BackgroundColor="#D9D9D9" Padding="10">
+                    <Image Source="toursombre"/>
+                    <VerticalStackLayout>
+                        <!--book title-->
+                        <FlexLayout Wrap="Wrap" JustifyContent="SpaceBetween">
+                            <Label Text="La tour sombre" Margin="5, 0, 0, 0"/>
+                            <Label Text="Stephen king" Margin="5, 0, 0, 0"/>
+                        </FlexLayout>
+                        <FlexLayout Wrap="Wrap" AlignItems="Center">
+                            <!--tags-->
+                            <Label Text="Série" Padding="5" BackgroundColor="Yellow" Margin="5, 0, 0, 0"/>
+                            <Label Text="Far-west" Padding="5" BackgroundColor="Orange" Margin="5, 0, 0, 0"/>
+                            <Label Text="Fantaisie" Padding="5" BackgroundColor="Green" Margin="5, 0, 0, 0"/>
+                            <Label Text="Adapté en film" Padding="5" BackgroundColor="Coral" Margin="5, 0, 0, 0"/>
+                        </FlexLayout>
+                        <!--Date-->
+                        <Label Text="Ajouté le 29.04.2024" Margin="15, 0, 0, 0"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
