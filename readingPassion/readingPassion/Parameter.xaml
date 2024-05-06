@@ -14,8 +14,7 @@
                 <ImageButton Source="x" WidthRequest="20"/>
             </FlexLayout>
 
-            <!--Account TODO Clickable-->
-            <Label Text="Account" FontSize="30" Margin="10, 10, 0, 10"/>
+            <Button Text="Account" FontSize="30" Margin="50, 10, 50, 10" BackgroundColor="#00000000" TextColor="Black" Clicked="Button_Clicked"/>
             <Line Stroke="DarkGray" StrokeThickness="2" X1="10" X2="310"/>
             <Label Text="Tags" FontSize="30" Margin="10, 10, 0, 10"/>
             <Line Stroke="DarkGray" StrokeThickness="2" X1="10" X2="310"/>

@@ -40,12 +40,11 @@ namespace readingPassion.ViewModel
         public Mvvm1ViewModel()
         {
             RefreshBooksFromDB();
-            readEpub();
         }
 
         private void RefreshBooksFromDB(ReaderContext? context = null)
         {
-            books.Clear();
+            bookss.Clear();
             using (var dbContext = context ?? new ReaderContext())
             {
                 foreach (var dbBook in dbContext.books)
@@ -55,11 +54,6 @@ namespace readingPassion.ViewModel
             }
         }
 
-        private async void readEpub()
-        {
-            await FileSystem.Current.OpenAppPackageFileAsync("");
-
-        }
         /// <summary>
         /// Go to the main page
         /// </summary>
