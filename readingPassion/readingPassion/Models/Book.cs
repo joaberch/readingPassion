@@ -15,9 +15,9 @@ namespace readingPassion.Models
         public string Category { get; set; }
         public int NbrPage { get; set; }
         public string Author { get; set; }
-        public string coverImage { get; set; }
-        public string state { get; set; }
-        public string[] tags { get; set; }
+        public string CoverImage { get; set; }
+        public string State { get; set; }
+        public string[] Tags { get; set; }
         
         //Debug
         public override string ToString()

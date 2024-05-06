@@ -32,7 +32,7 @@ namespace readingPassion.ViewModel
 
         //La méthode qui rajoute des livres
         [RelayCommand]
-        private void AddWish(string title)
+        private void AddBook(string title)
         {
             books.Add("test");
         }
@@ -59,6 +59,15 @@ namespace readingPassion.ViewModel
         {
             await FileSystem.Current.OpenAppPackageFileAsync("");
 
+        }
+        /// <summary>
+        /// Go to the main page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private async void goToMainPage(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("//MainPage");
         }
     }
 }
