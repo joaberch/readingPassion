@@ -35,6 +35,11 @@ namespace readingPassion
             int rand = new Random().Next(0, bookss.Count);
             image.Source = bookss[rand].coverImage;
         }
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new reading());
+        }
     }
 
     public class Book

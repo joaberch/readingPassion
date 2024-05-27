@@ -34,9 +34,9 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="0"/>
-                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="1"/>
-                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="2"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="0" Clicked="ImageButton_Clicked"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="1" Clicked="ImageButton_Clicked"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="2" Clicked="ImageButton_Clicked"/>
             </Grid>
 
             <!--À lire-->
@@ -57,9 +57,9 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="0"/>
-                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="1"/>
-                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="2"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="0" Clicked="ImageButton_Clicked"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="1" Clicked="ImageButton_Clicked"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="2" Clicked="ImageButton_Clicked"/>
             </Grid>
 
             <!--Lu récemment-->
@@ -80,9 +80,9 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="0"/>
-                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="1"/>
-                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="2"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="0" Clicked="ImageButton_Clicked"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="1" Clicked="ImageButton_Clicked"/>
+                <ImageButton Loaded="ImageButton_Loaded" Grid.Row="0" Grid.Column="2" Clicked="ImageButton_Clicked"/>
             </Grid>
 
         </VerticalStackLayout>
